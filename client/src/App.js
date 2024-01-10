@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import io from 'socket.io-client'
 import Chat from "./components/Chat";
 
-const socket = io.connect("http://localhost:4000")
+const socket = io.connect(process.env.REACT_APP_API_URL)
 
 function App() {
 
